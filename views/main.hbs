@@ -11,15 +11,15 @@
 			<div class="tabbable" id="tabs-62519">
 				<ul class="nav nav-tabs">
 					<li>
-						<a href="#panel-845756" data-toggle="tab">Sign In</a>
+						<a href="#panel-845756" class="tab"data-toggle="tab">Sign In</a>
 					</li>
 					<li class="active">
-						<a href="#panel-567051" data-toggle="tab">Join</a>
+						<a href="#panel-567051" class="tab" data-toggle="tab">Join</a>
 					</li>
 				</ul>
 				<div class="tab-content">
 					<div class="tab-pane" id="panel-845756">
-            <form method="POST" action="/login">
+            <form id="log"method="POST" action="/login">
               <div class="form-field">
                 <h3>{{signUp}}</h3>
               </div>
@@ -37,7 +37,7 @@
             </form>
 					</div>
 					<div class="tab-pane active" id="panel-567051">
-            <form  method="POST" action="/register">
+            <form id="reg" method="POST" action="/register">
               <div class="form-field">
                 <h3>{{join}}</h3>
               </div>
