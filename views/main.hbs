@@ -8,20 +8,13 @@
       <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="tabbable" id="tabs-62519">
-				<ul class="nav nav-tabs">
-					<li>
-						<a href="#panel-845756" class="tab"data-toggle="tab">Sign In</a>
-					</li>
-					<li class="active">
-						<a href="#panel-567051" class="tab" data-toggle="tab">Join</a>
-					</li>
-				</ul>
-				<div class="tab-content">
-					<div class="tab-pane" id="panel-845756">
+			<div class="" id="login-forms">
+				<button type="button" id="sBtn" name="button">Sign In</button>
+        <button type="button" id="jBtn" name="button">Join</button>
+					<div id="login-wrap" id="panel-log">
             <form id="log"method="POST" action="/login">
               <div class="form-field">
-                <h3>{{signUp}}</h3>
+                <h3>{{signIn}}</h3>
               </div>
               <div class="form-field">
                 <label for="">User Email</label>
@@ -36,7 +29,7 @@
               </div>
             </form>
 					</div>
-					<div class="tab-pane active" id="panel-567051">
+					<div id="register-wrap" id="panel-reg">
             <form id="reg" method="POST" action="/register">
               <div class="form-field">
                 <h3>{{join}}</h3>
@@ -54,7 +47,7 @@
               </div>
             </form>
 					</div>
-				</div>
+
 			</div>
 		</div>
 	</div>

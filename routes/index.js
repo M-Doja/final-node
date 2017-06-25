@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
     welcomeMsg: 'Welcome to the App',
     title: 'Phoja',
     text:' ',
-    signUp: 'Sign In',
+    signIn: 'Sign In',
     join: 'Join the community'
   });
 });

@@ -1,15 +1,23 @@
 console.log('App.js here');
 
-const loginForm = $('#log');
-const regForm = $('#reg');
-const signTab = $('.tab')[0];
-const joinTab = $('.tab')[1];
 
-// signTab.addEventListener('click', () => {
-//   regForm.hide();
-//   loginForm.show();
-// });
-// joinTab.addEventListener('click', () => {
-//   regForm.show();
-//   loginForm.hide();
-// });
+var lWrap = $('#login-wrap');
+var rWrap = $('#register-wrap');
+var sB = $('#sBtn');
+var jB = $('#jBtn');
+
+// lWrap.hide()
+rWrap.hide();
+sB.hide();
+jB.on('click', function(){
+  lWrap.hide();
+  rWrap.show();
+  sB.show();
+  jB.hide();
+});
+sB.on('click', function(){
+  rWrap.hide();
+  lWrap.show();
+  sB.hide();
+  jB.show();
+});
